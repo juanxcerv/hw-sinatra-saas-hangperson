@@ -1,3 +1,4 @@
+# Pair Programming: Melvin Hernandez 24813801
 class HangpersonGame attr_accessor :word, :guesses, :wrong_guesses, :word_with_guesses
 
   # add the necessary class methods, attributes, etc. here

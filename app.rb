@@ -1,3 +1,4 @@
+# Pair Programming: Melvin Hernandez 24813801
 require 'sinatra/base'
 require 'sinatra/flash'
 require './lib/hangperson_game.rb'
