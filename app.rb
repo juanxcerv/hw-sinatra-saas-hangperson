@@ -67,18 +67,22 @@ class HangpersonApp < Sinatra::Base
   
   get '/win' do
     ### YOUR CODE HERE ###
-    game_state = check_win_or_lose()
+    game_state = @game.check_win_or_lose()
     if game_state != :win
       redirect '/show'
-    erb :win # You may change/remove this line
+    else
+      erb :win # You may change/remove this line
+    end
   end
   
   get '/lose' do
     ### YOUR CODE HERE ###
-    game_state = check_win_or_lose()
+    game_state = @game.check_win_or_lose
     if game_state != :lose
       redirect '/show'
-    erb :lose # You may change/remove this line
+    else
+      erb :lose # You may change/remove this line
+    end
   end
   
 end
